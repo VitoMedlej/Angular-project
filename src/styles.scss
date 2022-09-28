@@ -55,8 +55,27 @@ img {
 
 
 @media (max-width: 768px) {
-  .sm {
+  .sm0 {
+    display : none !important;
+  }
+  .px {
+    padding:0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .md {
     display : none !important;
   }
 }
+.px {
+  padding-right: 1.2em;
+  padding-left: 1.2em;
 
+}
+.mw {
+  max-width: 1300px;
+
+}
+.m0 {
+  margin : 0 auto;
+}
