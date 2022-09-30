@@ -18,4 +18,29 @@
 .mat-list {
   padding-top: 0;
   display: flex;
+}
+
+.my1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.h10 {
+  height: 30px;
+}
+
+.gap {
+  gap: 0.5em;
+}
+
+.topBar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 2.3em;
+  margin: 0 auto;
+  padding: 0;
 }/*# sourceMappingURL=header.component.css.map */

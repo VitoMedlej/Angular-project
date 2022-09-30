@@ -18,4 +18,22 @@
   display: flex;
 
 }
-
+.my1 {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.h10 {
+  height:30px;
+}
+.gap {
+  gap: .5em
+}
+.topBar {
+  width:fit-content;
+  align-items:center;
+  justify-content:center;
+  display: flex;
+  height:2.3em;
+  margin: 0 auto;
+  padding:0;
+}

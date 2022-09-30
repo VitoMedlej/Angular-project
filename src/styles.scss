@@ -41,6 +41,9 @@ $Ang-theme: mat.define-light-theme((
   box-sizing: border-box;
   font-family: 'Noto Sans Mono', monospace;
 }
+$trans : all .3s ease;
+
+.trans{transition:$trans}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -52,8 +55,27 @@ img {
 .flex {
   display : flex;
 }
-
-
+.al {
+  align-items: center;
+}
+.mnone {
+  margin: 0 !important;
+}
+.end {
+  justify-content : flex-end !important;
+}
+.center {
+  justify-content : center;
+}
+.mat-list-item {
+  cursor: pointer;
+  margin-right: .15em;
+  margin-left: .15em;
+  transition : $trans;
+  &:hover {
+    background-color: rgb(219, 219, 219)
+  }
+}
 @media (max-width: 768px) {
   .sm0 {
     display : none !important;
@@ -66,6 +88,9 @@ img {
   .md {
     display : none !important;
   }
+}
+.px1 {
+  padding: 0 1em !important;
 }
 .px {
   padding-right: 1.2em;
