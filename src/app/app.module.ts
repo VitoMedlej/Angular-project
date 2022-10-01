@@ -13,6 +13,8 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './Components/header/header.component';
 import { HeroComponent } from './Components/hero/hero.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { ProcessComponent } from './Components/process/process.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,12 @@ import {MatMenuModule} from '@angular/material/menu';
     HeaderComponent,
     MainComponent,
     AboutComponent,
-    HeroComponent
+
+    HeroComponent,
+    ProcessComponent
   ],
   imports: [
+    MatGridListModule,
     BrowserModule,
     MatMenuModule,
     MatIconModule,
