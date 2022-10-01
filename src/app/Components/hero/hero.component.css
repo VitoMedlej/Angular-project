@@ -1,1 +1,81 @@
-/*# sourceMappingURL=hero.component.css.map */
+.img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 1em;
+  position: relative;
+}
+.img img {
+  min-height: 300px;
+}
+.img .mainText {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  z-index: 22;
+  color: white;
+}
+.img .mainText h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  max-width: 800px;
+  line-height: 1.05em;
+}
+.img .mainText button {
+  margin-top: 0.5em;
+  border-color: white;
+  color: white;
+}
+
+.shadow {
+  width: 100%;
+  top: 0;
+  height: 100%;
+  min-height: 300px;
+  right: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.509);
+  z-index: 11;
+}
+
+.short-desc {
+  padding: 4em 1em;
+}
+.short-desc h1 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .shadow {
+    height: 98%;
+  }
+  .mainText {
+    left: 0 !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1em;
+  }
+  .mainText h1 {
+    text-align: center;
+    font-size: 2.3em !important;
+  }
+}
+@media (min-width: 768px) {
+  .shadow {
+    height: 99%;
+  }
+  .mainText h1 {
+    font-size: 3.5em !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mainText h1 {
+    font-size: 4.5em !important;
+  }
+}/*# sourceMappingURL=hero.component.css.map */

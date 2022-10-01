@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './Components/header/header.component';
 import { HeroComponent } from './Components/hero/hero.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HeroComponent } from './Components/hero/hero.component';
   ],
   imports: [
     BrowserModule,
+    MatMenuModule,
     MatIconModule,
     MatListModule,
     MatToolbarModule,

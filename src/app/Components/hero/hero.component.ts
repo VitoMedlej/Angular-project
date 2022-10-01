@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
+https: any;
+imageAlt: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
