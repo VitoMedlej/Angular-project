@@ -38,16 +38,7 @@
     background: rgba(0, 0, 0, 0.509);
     z-index: 11;
 }
-.short-desc {
-  padding :  8em 1em 4em ;
-  max-width: 750px;
-  margin:0 auto;
-  h1 {
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: 600;
-  }
-}
+
 @media (max-width: 768px) {
     .shadow {
       height:98%;

@@ -15,6 +15,7 @@ import { HeroComponent } from './Components/hero/hero.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { ProcessComponent } from './Components/process/process.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { TrustComponent } from './Components/trust/trust.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AboutComponent,
 
     HeroComponent,
-    ProcessComponent
+    ProcessComponent,
+    TrustComponent
   ],
   imports: [
     MatGridListModule,
