@@ -1,34 +1,118 @@
 .div {
-padding: 1em ;
+    padding:0 1em;
+    max-width: 100em;
+    .text-t1 {
+        margin: 4.5em;
+    }
 }
-.h1 {
-  font-weight: 600;
-  font-size:2em;
+
+.card {
+    max-width: 450px;
+    width: 48%;
+    height: 550px;
+    background: rgb(61, 47, 93);
+    border-radius: 10px;
+    position: relative;
+    gap: 1em;
+    .card-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        pointer-events: none;
+  opacity:0.3;
+
+    }
+    .text {
+        position: absolute;
+        color: white;
+        top: 35%;
+        padding: 2em;
+        h1 {
+            font-weight: 500;
+            font-size: 2.5em;
+            margin-bottom: 0.8em;
+        }
+        h2 {
+            font-weight: 400;
+            color: white;
+        }
+    }
+    .nb {
+        color: black;
+        font-size: 2.5em;
+        margin: 1em 0.5em;
+        position: absolute;
+        background: white;
+        padding: 0.5em;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 241;
+    }
 }
-.mat-grid-list {
-  flex-wrap: wrap;
-}
-.cont {
-  display: flex;
-  flex-wrap: wrap;
-width: 100%;
-.title {
-  max-width: 500px;
-}
-  .img {
-    max-width:500px ;
-  }
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
-.nb {
-  padding: .5em;
-  background: #3f51b5;
-  border-radius: 50%;
-  pointer-events: none;
-  color:white;
-  max-width:30px ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height:30px ;
+// dont mind the colors, changed my mind and too bored to fix the naming
+.purple {
+    background: rgb(61, 47, 93);
+}
+.red {
+  background: rgb(52, 88, 90)
+}
+.green {
+  background: #3f51b5
+}
+.beige {
+  background: #001068
+}
+#e1 {
+    margin: -4.5em 0;
+}
+#e4 {
+    margin-top: 4.5em;
+}
+@media (max-width: 768px) {
+  .div {
+    .text-t1 {
+      margin: 1.5em !important;
+  }
+  }
+    .card {
+      margin : .5em 0 !important;
+      margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        padding: 1me;
+        height: 200px;
+        .nb {
+            height: 50px;
+            width: 50px;
+            font-size: 1.5em;
+        }
+        .text {
+            position: absolute;
+            color: white;
+            top: 35%;
+            padding: 1em;
+            h1 {
+                font-weight: 500;
+                font-size: 1.5em;
+                margin: 0 0 0.5em;
+            }
+            h2 {
+                font-size: 1em;
+                line-height: 1.5em;
+                font-weight: 300;
+                color: #d8d8d8;
+            }
+        }
+    }
 }
