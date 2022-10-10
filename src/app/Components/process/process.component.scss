@@ -1,8 +1,15 @@
 .div {
 padding: 1em ;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+.t {
+  margin-top: 1em;
+}
 }
 .h1 {
-  font-weight: 600;
+  font-weight: 400;
   font-size:2em;
 }
 .mat-grid-list {
@@ -13,15 +20,17 @@ padding: 1em ;
   flex-wrap: wrap;
 width: 100%;
 .title {
-  max-width: 500px;
+  max-width: 520px;
+  gap : 1em;
 }
-  .img {
-    max-width:500px ;
-  }
 
 }
+.img {
+  width : 95%;
+  max-width:500px ;
+}
 .nb {
-  padding: .5em;
+  padding: .8em;
   background: #3f51b5;
   border-radius: 50%;
   pointer-events: none;
@@ -31,4 +40,9 @@ width: 100%;
   align-items: center;
   justify-content: center;
   max-height:30px ;
+}
+@media (min-width: 768px) {
+  .img {
+    width : 50%;
+  }
 }
